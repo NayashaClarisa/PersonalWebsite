@@ -1,4 +1,4 @@
-import Image from 'next/Image'
+import Image from 'next/image'
 
 import Container from 'components/Container'
 import FooterInfo from './FooterInfo'
