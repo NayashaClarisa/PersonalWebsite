@@ -1,0 +1,7 @@
+.section {
+    @apply h-[700px];
+    background-image: url('/assets/home/header.png');
+    background-position: right top 13px;
+    background-repeat: no-repeat;
+    background-size: initial;
+}

@@ -1,0 +1,60 @@
+import Image from "next/Image"
+
+import Button from "components/Button"
+
+const PackageCard = () => {
+    return (
+        <article className="flex flex-col bg-white rounded-xl shadow-lg overflow-hidden w-[393px]">
+            <figure className="relative w-full h-[268px]">
+                <Image
+                    src="/assets/home/yoga.jpg"
+                    alt="yoga"
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition="center"
+                />
+            </figure>
+
+            <div className="flex flex-col p-4">
+                <div className="flex items-center mb-4">
+                    <Image
+                        src="/assets/icons/yellow-star.svg"
+                        height="20"
+                        width="20"
+                    />
+
+                    {/* <p className="text-heading-5 text-gray-70 ml-1">
+                        4.6 (1.242 Review)
+                    </p> */}
+                </div>
+
+                <p className = "text-heading-3 text-gray-100 font-label font-bold">
+                    Sports
+                </p>
+                <p className = "text-heading-4 text-gray-70 mb-4">
+                    Swim, Yoga, Gym
+                </p>
+
+                {/* <p className = "text-heading-3 text-gray-100 font-bold mb-4">
+                    Rp. 20.000.000
+                </p> */}
+
+                <p className = "text-heading-5 text-gray-70 mb-4">
+                    I have been practicing as a professional swimmer for more than 4 years with coach since I was kid. Now, i'm actively
+                    participating in yoga and gym class with the trainer.
+                </p>
+
+                {/* <div className = "flex justify-between gap-3">
+                    <Button fullWidth outLined>
+                        Lihat Detail
+                    </Button>
+                    <Button fullWidth>
+                        Pesan
+                    </Button>
+                </div> */}
+            </div>
+        </article>
+    )
+}
+
+export default PackageCard
